@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Secret key for session management
 
 # Load dataset
-dataset = pd.read_csv("large_synthetic_url_dataset.csv")
+dataset = pd.read_csv("large_synthetic_url_dataset.zip")
 
 # Ensure that the dataset contains the 'url' and 'label' columns
 dataset = dataset[['url', 'label']]  # Selecting only relevant columns
